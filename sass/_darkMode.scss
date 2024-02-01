@@ -1,0 +1,40 @@
+@use 'variables' as v;
+.dark-mode {
+  background-color: v.$text-title;
+  color: white;
+  .header{
+    .nav{
+      .nav__figure{
+        .nav__img{
+          content: url('../img/alarado-white.svg');
+        }
+      }
+      .nav__link{
+        color: v.$text-link-nav;
+        &:hover{
+          color: v.$bg-body;
+        }
+      }
+      .nav__link--active{
+        color: v.$text-white;
+      }
+    }
+  }
+  .content{
+    .hero{
+      &__info{
+        .hero__subtitle{
+          color: v.$bg-body;
+        }
+        .hero__title{
+          color: v.$bg-body;
+        }
+        .hero__cta{
+          .cta:last-child{
+            background-color: v.$text-title;
+          }
+        }
+      }
+    }
+  }
+}

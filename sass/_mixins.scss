@@ -1,0 +1,23 @@
+@mixin opacityMenu($oabrir,$pabrir,$oCerrar,$pCerra){
+  --opacidad-abrir: $oabrir;
+  --puntero-abrir: $pabrir;
+  --opacidad-cerrar: $oCerrar;
+  --puntero-cerrar: $pCerra;
+}
+@mixin iconEvents(){
+  opacity: 0;
+  pointer-events: none;
+}
+@mixin cta($bg,$br,$tc,$td){
+  width: 180px;
+  height: 50px;
+  border: none;
+  background-color: $bg;
+  border-radius: $br;
+  color: $tc;
+  text-decoration: $td;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
